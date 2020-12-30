@@ -6,7 +6,7 @@ buildscript {
         google()
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.0.0'
+        classpath 'com.android.tools.build:gradle:3.2.0'
         classpath 'com.didi.virtualapk:gradle:0.9.8.6'
 
         classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.6'
@@ -15,13 +15,14 @@ buildscript {
 }
 
 ext {
-    VERSION_COMPILE_SDK = 27
-    VERSION_BUILD_TOOLS = '26.0.2'
+    VERSION_COMPILE_SDK = 29
+    VERSION_BUILD_TOOLS = '30.0.2'
 
-    VERSION_MIN_SDK = 15
-    VERSION_TARGET_SDK = 25
+    VERSION_MIN_SDK = 16
+    VERSION_TARGET_SDK = 29
 
-    SOURCE_COMPATIBILITY = JavaVersion.VERSION_1_7
+    SOURCE_COMPATIBILITY = JavaVersion.VERSION_1_8
+    ndkVersion = 'r16b'
 }
 
 allprojects {
