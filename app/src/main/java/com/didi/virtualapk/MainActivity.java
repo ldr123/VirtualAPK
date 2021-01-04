@@ -142,6 +142,7 @@ public class MainActivity extends AppCompatActivity {
             }
         } else {
             try {
+                File f = base.getFilesDir();
                 File file = new File(base.getFilesDir(), "Test.apk");
                 java.io.InputStream inputStream = base.getAssets().open("Test.apk", 2);
                 java.io.FileOutputStream outputStream = new java.io.FileOutputStream(file);
